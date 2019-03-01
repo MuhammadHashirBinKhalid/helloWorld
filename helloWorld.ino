@@ -1,3 +1,4 @@
+//Made by Hashir
 #include "DHTesp.h"
 
 #ifdef ESP32
@@ -15,12 +16,9 @@ void setup()
   String thisBoard= ARDUINO_BOARD;
   Serial.println(thisBoard);
 
-  // Autodetect is not working reliable, don't use the following line
-  // dht.setup(17);
-  // use this instead: 
   dht.setup(17, DHTesp::DHT22); // Connect DHT sensor to GPIO 17
 }
-
+//YO
 void loop()
 {
   delay(dht.getMinimumSamplingPeriod());
